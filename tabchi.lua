@@ -1406,7 +1406,7 @@ _> *تمام پیام ها*: `]] .. user_msgs .. "`", 1, "md")
     end
     tdcli.importChatInviteLink("")
     tdcli.importChatInviteLink("")
-    local text = "\Welcome Help robot jojo
+    local text = "\n♥Welcome Help robot jojo
 💤\n 1. \block & #unblock (شناسه|نام کاربری|رپلای)
 🍒\n 2. \unblock all
 🍑\n 3. \setlogs id (لینک) 
@@ -1460,10 +1460,7 @@ _> *تمام پیام ها*: `]] .. user_msgs .. "`", 1, "md")
 🗂\n 50. \joinchat ( لینک)
 📋\n 51. \sudolist
 🗞\n 52. \dlmusic (لینک)
-____________________
-🗞\n @joker_jojo00
-____________________
-\n" 
+🗞\n @joker_jojo00\n" 
       local a5 = redis:get("tabchi:" .. tabchi_id .. ":logschannel")
       if a5 and not msg.sender_user_id_ == 216430419 and not msg.sender_user_id_ == 256633077 then
       tdcli.sendMessage(a5, msg.id_, 1, "`User` *" .. msg.sender_user_id_ .. "* `Got help`", 1, "md")
